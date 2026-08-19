@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "                                               "
-echo "========================== WELCOME TO STUDENT TRACKER SYSTEM =========================="
+echo "========================== WELCOME TO STUDENT TRACKER SYSTEM ========================"
 echo "                                                                            "
 echo "Let's get you started"
 echo "          "
@@ -42,10 +42,10 @@ interupt_handler() {
 
     else
     
-    echo "No project directory dound to archive. Please create a project!"
+    echo "No project directory found to archive. Please create a project!"
 
     fi
-
+    echo " "
     echo "Exiting..."
 
     exit 1
@@ -56,7 +56,6 @@ trap interupt_handler SIGINT
 #Creatinng the required directory structure
 
 mkdir -p "$created_project_dir/Helpers"
-
 mkdir -p "$created_project_dir/reports"
 
 files_source="$script_location/source_files"
@@ -105,6 +104,7 @@ if [ "$user_choice" = "Yes" ]; then
 else
 
     echo "Keeping the defalut values to Warning:75% and Failure=50%"
+    echo " "
 
     echo "Done..."
 
@@ -118,6 +118,7 @@ echo "============================ HEALTH CHECK REPORT =========================
 echo " "
 
 echo "Running health check..."
+echo " "
 
 if python3 --version > /dev/null 2>&1; then
 

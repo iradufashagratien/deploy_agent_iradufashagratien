@@ -5,7 +5,7 @@ echo "                                                                          
 echo "Let's get you started"
 echo "          "
 
-read -p "Write the name of the project: " user_input
+read -p "Write the name of the project [ No special symbols or space ]: " user_input
 
 # Ensure user input isn't blank
 if [ -z "$user_input" ]; then

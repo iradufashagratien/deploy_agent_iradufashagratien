@@ -75,4 +75,6 @@ This will:
 - Kepp whatever exists so far into `attendance_tracker_<name>_archive.tar.gz`
 - Delete the incomplete `attendance_tracker_<name>/` directory
   
-This is the link to the walkthrough video: 
+This is the link to the walkthrough video: https://www.loom.com/share/a890aeae618249ac84da1ee63a55a48a
+  
+
